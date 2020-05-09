@@ -1,5 +1,8 @@
 package com.in28minutes.rest.webservices.restfulwebservices.helloworld;
 
+import java.util.Calendar;
+import java.util.Date;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,7 +13,10 @@ public class HelloWorldController {
 
 	@GetMapping(path = "/hello-world")
 	public String helloWorld() {
-		return "Hello World";
+		Date d = new Date();
+		
+		return "Hello World  " + d.getDate() +", " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+		
 	}
 
 	@GetMapping(path = "/hello-world-bean")
