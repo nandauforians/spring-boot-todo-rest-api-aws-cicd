@@ -21,7 +21,7 @@ public class HelloWorldController {
 
 	@GetMapping(path = "/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
-		return new HelloWorldBean("Hello World");
+		return new HelloWorldBean("Hello World to the Upside Down !!!! ");
 	}
 	
 	///hello-world/path-variable/in28minutes
